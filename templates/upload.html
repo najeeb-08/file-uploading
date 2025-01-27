@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="bg-white shadow-md rounded-lg p-8">
+        <h1 class="text-3xl font-bold text-center mb-6">Upload a File</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data" class="space-y-6">
+            <div>
+                <label for="file" class="block text-lg font-medium text-gray-700">Choose file to upload:</label>
+                <input type="file" id="file" name="file" required class="mt-2 p-2 border border-gray-300 rounded-md w-full">
+            </div>
+            <button type="submit" class="w-full bg-purple-600 text-white py-2 px-4 rounded-md hover:bg-purple-700 transition duration-300">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
